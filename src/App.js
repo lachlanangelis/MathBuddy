@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './Components/objects/Navbar';
-import About from './Components/pages/About';
-import Contact from './Components/pages/Contact';
-import Home from './Components/pages/Home';
-import Signup from './Components/pages/Signup';
-import Tsign from './Components/pages/Tsignup';
-import Login from './Components/pages/Login';
+import About from './Components/homepages/About';
+import Contact from './Components/homepages/Contact';
+import Home from './Components/homepages/Home';
+import Signup from './Components/homepages/Signup';
+import Tsign from './Components/homepages/Tsignup';
+import Login from './Components/homepages/Login';
 
 function App() {
     return (
