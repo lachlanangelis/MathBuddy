@@ -1,0 +1,100 @@
+/* src/Components/studentstyle/StudentHome.css */
+.studenthome-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header-container {
+  position: absolute;
+  top: 80px; /* Adjust this value to move the header container up or down */
+  left: 200px; /* Adjust this value to move the header container left or right */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center elements */
+  width: 80%; /* Adjust width as needed */
+}
+
+.welcome-message {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  position: relative;
+  padding-bottom: 10px; /* Add some padding below the text to separate it from the line */
+}
+
+.welcome-message::after {
+  content: "";
+  display: block;
+  width: 380%; /* Adjust this value to change the length of the line */
+  height: 2px;
+  background-color: #E8F1FF; /* Change the color as needed */
+  margin-top: 10px; /* Add some space between the text and the line */
+}
+
+.active-tasks {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  position: relative;
+  padding-bottom: 10px; /* Add some padding below the text to separate it from the line */
+  margin-left: auto; /* Move the element to the right */
+}
+
+.button-line-container {
+  display: flex;
+  align-items: center;
+  margin-top: -210px; /* Adjust this value to move the buttons up or down */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  align-items: center;
+  margin-top: -100px;
+  padding-left: 20px; /* Add padding to adjust left position */
+  gap: 60px; /* Add some space between buttons */
+}
+
+.button-container button {
+  padding: 10px 20px; /* Adjust padding for button size */
+  border: 2px solid black; /* Black outline */
+  border-radius: 5px;
+  font-size: 16px; /* Adjust font size */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  width: 150px; /* Adjust width */
+  height: 50px; /* Adjust height */
+  text-align: left; /* Center the text */
+}
+
+.class-button {
+  background-color: #a4c5ff; /* Adjust background color */
+}
+
+.lesson-button {
+  background-color: #ffb3b3; /* Adjust background color */
+}
+
+.feedback-button {
+  background-color: #b3ffb3; /* Adjust background color */
+}
+
+.vertical-line {
+  width: 2px;
+  height: 500px; /* Adjust height as needed */
+  background-color: #E8F1FF; /* Line color */
+  margin-top: 340px;
+  margin-left: 300px; /* Adjust space between buttons and line */
+}
