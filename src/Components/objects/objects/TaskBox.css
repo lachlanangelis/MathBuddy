@@ -1,0 +1,24 @@
+/* src/Components/objects/TaskBox.css */
+.task-box {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    background-color: #fff; /* Background color */
+    border: 1px solid #000; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    padding: 10px; /* Padding inside the box */
+    margin: 10px; /* Margin around the box */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+  
+  .task-box h3 {
+    font-size: 18px; /* Font size for title */
+    margin: 0 0 10px 0; /* Margin around title */
+    text-align: center; /* Center align title */
+  }
+  
+  .task-box p {
+    font-size: 14px; /* Font size for text */
+    margin: 5px 0; /* Margin around text */
+  }
+  
