@@ -2,6 +2,8 @@
 import React from 'react';
 import StudentHeader from '../objects/StudentHeader';
 import StudentSNav from '../objects/StudentSNav';
+import TaskBox from '../objects/TaskBox';
+import RecentlyAccessedBox from '../objects/RecentlyAccessedBox';
 import '../studentstyle/StudentHome.css';
 
 const StudentHome = () => {
@@ -22,6 +24,14 @@ const StudentHome = () => {
               <button className="feedback-button">Feedback</button>
             </div>
             <div className="vertical-line"></div>
+          </div>
+          <div className="horizontal-line"></div>
+          <h2 className="recently-accessed">Recently accessed</h2>
+          <div className="recently-accessed-container">
+            <RecentlyAccessedBox iconColor="#FFA07A" text="Quiz: Fun Wordy Math" />
+          </div>
+          <div className="task-box-container">
+            <TaskBox title="Class 4b" task="Task: Assignment - Addition & Subtraction" dueDate="Dec 16th, 2024" />
           </div>
         </div>
       </div>
