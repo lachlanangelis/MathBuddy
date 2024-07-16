@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; /* Vertically center elements */
-  width: 80%; /* Adjust width as needed */
+  width: 77%; /* Adjust width as needed */
 }
 
 .welcome-message {
@@ -97,4 +97,32 @@
   background-color: #E8F1FF; /* Line color */
   margin-top: 340px;
   margin-left: 300px; /* Adjust space between buttons and line */
+}
+
+.horizontal-line {
+  position: absolute;
+  top: 250px; /* Adjust this value to move the line up or down */
+  left: 200px; /* Adjust this value to move the line left or right */
+  width: 59%; /* Full width */
+  height: 2px;
+  background-color: #E8F1FF; /* Line color */
+}
+
+.recently-accessed {
+  position: absolute;
+  font-size: 18px;
+  margin-top: -120px; /* Adjust space between line and text */
+  padding-left: 40px; /* Adjust left position */
+}
+
+.task-box-container {
+  position: absolute;
+  top: 150px; /* Adjust this value to move the task box container up or down */
+  left: 1120px; /* Adjust this value to move the task box container left or right */
+}
+
+.recently-accessed-container {
+  position: absolute;
+  top: 300px; /* Adjust this value to move the recently accessed boxes up or down */
+  left: 220px; /* Adjust this value to move the recently accessed boxes left or right */
 }
