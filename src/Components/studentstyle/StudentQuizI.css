@@ -1,0 +1,168 @@
+.studentquiz-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 100vh;
+}
+
+.SQIcontent-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative; /* Ensure the child elements with absolute positioning are relative to this container */
+}
+
+.SQImain-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 170px; /* Adjust this value to provide space for the sidebar */
+}
+
+.quiz-message {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-top: -4vh;
+  position: relative; /* Ensure the pseudo-element is positioned relative to the parent */
+  padding-bottom: 1px; /* Add some padding below the text to separate it from the line */
+}
+
+.quiz-message::after {
+  content: "";
+  position: absolute; /* Use absolute positioning */
+  top: 100%; /* Position the line just below the text */
+  left: 0; /* Align the line with the left edge of the parent */
+  width: 100%; /* Make the line span the full width of the parent */
+  height: 2px;
+  background-color: #E8F1FF; /* Line color */
+  margin-top: 10px; /* Add space between the text and the line */
+}
+
+.Question-box {
+  height: 20vh;
+  width: 25vh;
+  position: absolute; /* Absolute positioning */
+  top: 10vh; /* Adjust as needed to align with your design */
+  right: 2vh; /* Adjust as needed to align with your design */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #E8F1FF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-box {
+  font-weight: 700;
+  padding-left: 0.5rem;
+  font-size: 20px;
+}
+
+.SQI-questionsbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items horizontally */
+  padding-top: 0.25rem;
+  padding-left: 0.30rem;
+  justify-content: space-evenly;
+  gap: 0.30rem; /* Add gap between items */
+}
+
+.SQI1, .SQI2, .SQI3, .SQI4, .SQI5, .SQI6, .SQI7, .SQI8, .SQI9, .SQI10 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid #71A2FF;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Content for the quiz */
+.SQImain-content {
+  width: 70vh;
+  height: 100vh;
+  margin: 0 auto;
+  margin-right: 30vh;
+  margin-left: 5vh;
+  margin-top: 5vh;
+  display: flex; /* If you want to layout the items horizontally, otherwise remove */
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px;
+}
+
+.question-container {
+  gap: 20px;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.answer-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.answer-form input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.SQIButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.answer-form button {
+  width: 80px;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  background-color: #71A2FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-form button:hover {
+  background-color: #5090FF;
+}
+
+.next-button {
+  position: absolute;
+  padding-right: 2.5rem;
+  top: 32vh; /* Adjust this value to position the button below the Question-box */
+  right: 2vh; /* Align with the right position of the Question-box */
+}
+
+.next-btn {
+  width: 80px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #71A2FF;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Ensures the text is centered */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-btn:hover {
+  background-color: #5090FF;
+}
+
+

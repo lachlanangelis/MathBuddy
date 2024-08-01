@@ -1,0 +1,84 @@
+/* src/Components/studentstyle/StudentClasses.css */
+.studentlessons-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  .lessons-message {
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; /* Add some padding below the text to separate it from the line */
+    position: absolute; /* Change to absolute for free movement */
+    top: 70px; /* Initial position, adjust as needed */
+    left: 190px; /* Initial position, adjust as needed */
+  }
+  
+  .lessons-message::after {
+    content: "";
+    display: block;
+    width: 95rem; /* Adjust this value to change the length of the line */
+    height: 2px;
+    background-color: #E8F1FF; /* Change the color as needed */
+    margin-top: 10px; /* Add some space between the text and the line */
+    
+  }
+  
+  .SLMain-Container {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top:10vh;
+    display: flex; /* If you want to layout the items horizontally, otherwise remove */
+    flex-direction: row; /* If you want to stack the items vertically */
+    justify-content: space-between;
+  }
+
+  .item {
+    width: 300px;
+    height: 300px;
+    background-color: #E8F1FF;
+    padding: 1em;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+    border: 1px #71A2FF;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .q-1, .l-1 {
+    margin-top: 25px;
+    display: flex;
+  }
+
+  .q-1 span, .l-1 span {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+  }
+
+ .q-2, .l-2 {
+  margin-top: 25px;
+  display: flex;
+ }
+
+ .q-2 span, .l-2 span {
+  margin-right: 10px;
+ }
+
+
+ .q-3, .l-3 {
+  margin-top: 25px;
+  display: flex;
+ }
+
+ .q-3 span, .l-3 span {
+  margin-right: 10px;
+ }

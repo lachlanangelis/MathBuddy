@@ -1,24 +1,24 @@
-/* src/Components/studentstyle/StudentQuiz.css */
-.studentquiz-container {
+/* src/Components/studentstyle/StudentClasses.css */
+.studentclasses-container { 
   display: flex;
   flex-direction: column;
   background-color: white;
   height: 100vh;
 }
 
-.SQcontent-wrapper {
+.SCcontent-wrapper { /* SC means StudentClass should change to whatever doc ur using. If its the teacher class section it should be TCmain-content so the css doesnt affect other css documents */
   display: flex;
   flex-direction: row;
 }
 
-.SQmain-content {
+.SCmain-content {
   flex: 1;
   padding: 20px;
   margin-left: 1rem; /* Adjust this value to provide space for the sidebar */
   margin-top: 1.5rem; /* Adjust this value to provide space for the header */
 }
 
-.Quiz-message {
+.classes-message {
   font-size: 24px;
   margin-bottom: 20px;
   margin-top: -4vh;
@@ -26,7 +26,7 @@
   padding-bottom: 1px; /* Add some padding below the text to separate it from the line */
 }
 
-.Quiz-message::after {
+.classes-message::after {
   content: "";
   position: absolute; /* Use absolute positioning */
   top: 100%; /* Position the line just below the text */
@@ -37,22 +37,17 @@
   margin-top: 10px; /* Add space between the text and the line */
 }
 
-.SQMain-Container {
+.SCMain-Container {
   width: 100%;
   height: 80vh;
   margin: 0 auto;
-  margin-top:5vh;
+  margin-top: 5vh;
   display: flex; /* If you want to layout the items horizontally, otherwise remove */
-  flex-direction: row; /* If you want to stack the items vertically */
-  justify-content: space-between;
+  border: 2px ;
+  margin-right: 10vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.SQQuiz-box {
-  width: 100%;
-  height: 20%;
-  display: flex; /* If you want to layout the items horizontally, otherwise remove */
-  flex-direction: column;
-  border: 2px ; /* to see borders */
-  margin-left: 0.5rem;
-}
+
 
