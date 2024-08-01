@@ -1,36 +1,34 @@
 // src/Components/studentpages/StudentQuiz.js
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
 import StudentHeader from '../objects/StudentHeader';
 import StudentSNav from '../objects/StudentSNav';
-import '../studentstyle/StudentQuiz.css';
-import Quizbox from '../objects/QuizBox';
+import '../studentstyle/StudentFeedback.css';
+import FeedbackBox from '../objects/Feedbackbox';
 
-const StudentQuiz = () => {
+const StudentFeedback = () => {
   return (
-    <div className="studentquiz-container">
+    <div className="studentfeedback-container">
       <StudentHeader /> {/* Top navbar */}
-      <div className="SQcontent-wrapper">
+      <div className="SFcontent-wrapper">
         <StudentSNav /> {/* Side navbar */}
-        <div className="SQmain-content">
-          <h1 className="Quiz-message">Quizzes</h1>
+        <div className="SFmain-content">
+          <h1 className="Feedback-message">Feedback</h1>
           {/* Your classes content goes here */}
 
-          <div className="SQMain-Container">
-            <div className="SQQuiz-box">
-              <Link to="/studentquizi" className="quiz-link"> {/* Link to StudentQuizI */}
-                <div className="QuizBox1">
-                  <Quizbox
-                    status="incomplete"
+          <div className="SFMain-Container">
+            <div className="Feedback-box">
+                <div className="FeedBox1">
+                  <FeedbackBox
+                    status="complete"
                     title="Quiz - Fun wordy math"
                     dueDate="11/12/24"
                     timeLimit="30 Minutes"
                     marks="20"
                   />
                 </div>
-              </Link>
-              <div className="QuizBox2">
-                <Quizbox
+              
+              <div className="FeedBox2">
+                <FeedbackBox
                   status="complete"
                   title="Quiz - Fun wordy math"
                   dueDate="11/12/24"
@@ -46,4 +44,4 @@ const StudentQuiz = () => {
   );
 };
 
-export default StudentQuiz;
+export default StudentFeedback;
