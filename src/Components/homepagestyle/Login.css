@@ -63,7 +63,22 @@
     max-width: 300px; /* Set a maximum width for the button */
   }
   
+  .Tlogin-button {
+    background-color: #71A2FF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    width: 100%; /* Make the button full width */
+    text-align: center; /* Center text inside button */
+    max-width: 300px; /* Set a maximum width for the button */
+  }
+
   .login-button:hover {
     background-color: #0056b3;
   }
+  
   
