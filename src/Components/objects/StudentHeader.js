@@ -10,18 +10,18 @@ export default function StudentHeader() {
                 </Link>
                 <span className="desc">Wollongong, School of Math</span>
             </div>
-            <ul>
-                <li>
-                    <Link to="/profile">
-                        <img src={`${process.env.PUBLIC_URL}/images/icons/profile-icon.png`} alt="Profile Icon" className="icon" />
-                    </Link>
-                </li>
-                <li>
+            <div className="nav-right">
+                <div className="nav-item">
                     <Link to="/settings">
-                        <img src={`${process.env.PUBLIC_URL}/images/icons/settings-icon.png`} alt="Settings Icon" className="icon" />
+                        <img src={`${process.env.PUBLIC_URL}/images/home/settings-icon.png`} alt="Profile Icon" className="icontest" />
                     </Link>
-                </li>
-            </ul>
+                </div>
+                <div className="nav-item">
+                    <Link to="/profile">
+                        <img src={`${process.env.PUBLIC_URL}/images/home/profile-icon.png`} alt="Settings Icon" className="icontest" />
+                    </Link>
+                </div>
+            </div>
         </nav>
     );
 }

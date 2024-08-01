@@ -1,0 +1,61 @@
+/* src/Components/objects/StudentSNav.css */
+.sidebar {
+    background-color: #E8F1FF;
+    width: 150px; /* Adjust width as needed */
+    height: calc(93vh - 0px); /* Full viewport height minus the top margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the center */
+    padding: 20px; /* Padding inside the sidebar */
+    border-radius: 10px; /* Smoothed edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visual */
+    margin-top: 10px; /* Move the sidebar down */
+    margin-left: 15px; /* Move the sidebar to the right */
+    border: 1px solid black; /* Add black outline */
+    margin-bottom: 10px;
+  }
+  
+  .menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    margin-bottom: 10px; /* Increase space below menu icon */
+    cursor: pointer;
+  }
+  
+  .nav-item {
+    display: flex;
+    flex-direction: column; /* Stack icon on top of text */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 40px; /* Adjust space between icons */
+    cursor: pointer;
+  }
+  
+  .nav-item:nth-child(2) {
+    margin-bottom: 60px; /* Increase space below the first nav-item */
+  }
+  
+  .nav-icon {
+    font-size: 24px;
+    margin-bottom: 10px; /* Space between icon and text */
+  }
+  
+  .nav-text {
+    font-size: 16px;
+    color: #71A2FF;
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+  }
+  
